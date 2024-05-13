@@ -20,6 +20,7 @@ https://github.com/LinZhekai/X-Oscar/assets/149573107/a7520940-2429-4f6c-abbe-9b
 ## 🛠️ Environment Setup 
 - System: Unbuntu 22.04 
 - Tested GPU: RTX3090
+
 Tips: It is recommended to follow the version I provided to reproduce 100%.
 
 ```bash
