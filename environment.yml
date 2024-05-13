@@ -1,4 +1,4 @@
-name: xoscar
+name: XOscar
 channels:
   - pytorch
   - conda-forge
