@@ -1,5 +1,5 @@
 <p align="center">
-  <img width="25%" src="assets/logo and name.png"/>
+  <img width="75%" src="assets/logo and name.png"/>
 </p>
 
 # X-Oscar
