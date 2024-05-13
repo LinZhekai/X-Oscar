@@ -17,6 +17,29 @@ Recent advancements in automatic 3D avatar generation guided by text have made s
 
 https://github.com/LinZhekai/X-Oscar/assets/149573107/a7520940-2429-4f6c-abbe-9b04d4f2d355
 
+## 🛠️ Environment Setup 
+- System: Unbuntu 22.04 
+- Tested GPU: RTX3090
+Tips: It is recommended to follow the version I provided to reproduce 100%.
+
+```bash
+git clone git@github.com:LinZhekai/X-Oscar.git
+cd X-Oscar
+
+conda env create --file environment.yml
+conda activate XOscar
+pip install -r requirements.txt
+ 
+cd smplx
+python setup.py install 
+
+# download omnidata normal and depth prediction model 
+mkdir data/omnidata 
+cd data/omnidata 
+gdown '1Jrh-bRnJEjyMCS7f-WsaFlccfPjJPPHI&confirm=t' # omnidata_dpt_depth_v2.ckpt
+gdown '1wNxVO4vVbDEMEpnAi_jwQObf2MFodcBR&confirm=t' # omnidata_dpt_normal_v2.ckpt
+```
+
 ## 📚 Data
 We follow a similar way to [TADA](https://github.com/TingtingLiao/TADA) to construct data.
 - [SMPL-X Model](http://smpl-x.is.tue.mpg.de/) (Download the SMPLX_NEUTRAL_2020.npz and put it into ./data/smplx/)
@@ -65,29 +88,6 @@ We follow a similar way to [TADA](https://github.com/TingtingLiao/TADA) to const
 
 ```
 </details>
-
-## 🛠️ Environment Setup 
-- System: Unbuntu 22.04 
-- Tested GPU: RTX3090
-Tips: It is recommended to follow the version I provided to reproduce 100%.
-
-```bash
-git clone git@github.com:LinZhekai/X-Oscar.git
-cd X-Oscar
-
-conda env create --file environment.yml
-conda activate XOscar
-pip install -r requirements.txt
- 
-cd smplx
-python setup.py install 
-
-# download omnidata normal and depth prediction model 
-mkdir data/omnidata 
-cd data/omnidata 
-gdown '1Jrh-bRnJEjyMCS7f-WsaFlccfPjJPPHI&confirm=t' # omnidata_dpt_depth_v2.ckpt
-gdown '1wNxVO4vVbDEMEpnAi_jwQObf2MFodcBR&confirm=t' # omnidata_dpt_normal_v2.ckpt
-```
 
 ## 🚀 Usage
 
