@@ -43,7 +43,11 @@ gdown '1wNxVO4vVbDEMEpnAi_jwQObf2MFodcBR&confirm=t' # omnidata_dpt_normal_v2.ckp
 
 ## 📚 Data
 We follow a similar way to [TADA](https://github.com/TingtingLiao/TADA) to construct data.
-- [SMPL-X Model](http://smpl-x.is.tue.mpg.de/) (Download the SMPLX_NEUTRAL_2020.npz and put it into ./data/smplx/)
+- [SMPL-X Model](http://smpl-x.is.tue.mpg.de/)
+  
+  (Download the SMPLX_NEUTRAL_2020.npz and put it into ./data/smplx/)
+  
+  (Download the VPoser v2.0 and update expr_dir in lib/dlmesh_XOscar.py)
 - [TADA Extra Data](https://download.is.tue.mpg.de/download.php?domain=tada&resume=1&sfile=tada_extra_data.zip) (Unzip it as directory ./data)
 - Optional Motion Data  
   - [AIST](https://aistdancedb.ongaaccel.jp/), [AIST++](https://google.github.io/aichoreographer/)
